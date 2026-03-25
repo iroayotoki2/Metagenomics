@@ -33,3 +33,26 @@ The dataset used for this analysis was obtained from the NCBI database under Bio
 ## Quality Control
 
 Quality control checks were performed using FastQC v0.12.1 for each individual FASTQ file and were viewed collectively using MultiQC v1.33 (Babraham Bioinformatics - FastQC A Quality Control Tool for High Throughput Sequence Data, n.d.; Ewels et al., 2016).
+
+## Classification
+Classification was performed using Kraken2 v2.1.6 with the Kraken2 standard database (Wood et al., 2019). The following parameters were used:
+
+`--db`: to specify the database
+
+`--paired`: to specify paired reads
+
+`--report`: to generate a report file with taxonomic abundances
+
+## Re-estimation
+Re-estimation was performed using Bracken v3.0 with the same Kraken2 database and default options to produce a species-level report (Lu et al., 2017).
+
+## Relative abundance
+The data were imported into R v4.5.1 using the biomformat package v1.36.0, and Phyloseq v1.52.0 was used to calculate the relative abundance of the respective taxa of interest using the `transform_sample_counts` function and standard R functions for division (McDonald et al., 2012; McMurdie & Holmes, 2013).
+
+## Diversity measures
+Alpha diversity plots were generated using the `plot_richness` function from the Phyloseq v1.52.0 package, while beta diversity plots were generated using the ordinate function from the same package. The distance metric chosen was Bray–Curtis to account for differential abundance rather than just presence/absence (McMurdie & Holmes, 2013).
+
+## Differential abundance
+Singletons were removed prior to differential abundance analysis, and the data were subsetted to the top 1000 most abundant genera. Differential abundance was calculated using ANCOM-BC2 v2.10.1. The fixed formula and structural zero variable were set to the diet variable, while `lib_cut` was set to 1000 to remove samples with low sequencing depth. Other default parameters were retained to preserve the accuracy of the method (Lin & Peddada, 2023).
+
+# Results 
