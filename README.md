@@ -77,3 +77,64 @@ Alpha diversity analysis revealed differences in richness and evenness between d
 ![Alpha diversity Plot](Plots/Alpha_Diversity.jpeg)
 
 Figure 3:  Alpha diversity across omnivore and vegetarian samples using multiple metrics (Observed, Chao1, ACE, Shannon, Simpson, inverse Simpson, Fisher). Omnivore samples generally show higher richness but greater variability, including a low-richness outlier, while vegetarian samples display more consistent diversity. Shannon values are similar between groups, whereas Simpson-based indices indicate more even community structure in vegetarian samples.
+
+## Beta Diversity 
+Beta diversity using Bray Curtis dissimilarity measures compositional dissimilarity based on abundances. The principal coordinate analysis(PCoA) showed the first PC to explain 58% of the variance while the second explained 18% of the analysis, however upon plotting these did not form any visible clusters across the samples by diet. aThis could be attribbuted to the small sample size used for this analysis. The PERMANOVA analysis also showed significant correlation across the diet with a p-value of 0.8
+![Beta diversity Plot1](Plots/Bray_PCoA.jpeg)
+
+Figure 4: Beta diversity across omnivore and vegetarian samples using Bray-Curtis dissimilarity with the first principal coordinate explaining 58% of the variation and the second explaining 18%  of the variation.
+
+## Differential Abundance 
+Differential abundance analysis, performed using the vegetarian group as the reference, identified no taxa that were significantly different between diets (p < 0.05). However, structural zero analysis revealed three genera that were present in the omnivore group but absent in the vegetarian group (g__Junduvirus, g__Aurodevirus, and g__Buchavirus). To further explore potential trends, taxa with the highest absolute log fold changes were visualized, highlighting the largest differences in abundance despite the lack of statistical significance.
+
+| taxon           | structural_zero (Diet_S0 = Omnivore) | structural_zero (Diet_S0 = Vegetarian) |
+|-----------------|--------------------------------------|----------------------------------------|
+| g__Junduvirus   | FALSE                                | TRUE                                   |
+| g__Aurodevirus  | FALSE                                | TRUE                                   |
+| g__Buchavirus   | FALSE                                | TRUE                                   |
+
+![Differential Abundance Plot](Plots/Differential_Abundance.jpeg)
+
+Figure 5: Log fold changes of differentially abundant taxa across diet groups. Each point represents a taxon, with positive values indicating higher abundance in the comparison group(Omnivore) relative to the reference(Vegetarian) , and negative values indicating lower abundance. 
+
+# Discussion
+The results largely show little to no association between diet type and gut microbiome composition, apart from the alpha diversity measure, which indicated increased diversity in the omnivorous samples. This is likely due to the small sample size used in this analysis, making it difficult to draw robust statistical conclusions and representing a major limitation of this study.
+
+The increased diversity observed in the omnivorous group is notable, as higher microbial diversity is often associated with vegetarian diets due to their high fiber content, according to a cross-sectional study by Losasso et al. (2018). This unexpected finding warrants further investigation and may connect with other observations described below.
+
+Two taxa found exclusively in the omnivorous group—Aurodevirus and Buchavirus—are bacteriophages belonging to the order Crassvirales. These findings align with previous studies showing that members of the Crassvirales order are strongly associated with high-fat, Western-style omnivorous diets. Their presence could also contribute to the higher microbial diversity observed in the omnivore group, as these bacteriophages are more likely to thrive in a bacteria-rich environment (Cao et al., 2022).
+
+Succinvibrio, a bacterium associated with the breakdown of complex carbohydrates, was more abundant in the vegetarian samples. This observation is consistent with the metabolic requirements of a plant-based diet, as several studies report higher levels of beneficial polysaccharide fermentation products in vegans. This supports the enrichment of microbes specialized in carbohydrate breakdown in the vegetarian gut microbiome (Saxena et al., 2016; Sidhu et al., 2023).
+
+# Conclusion
+
+Overall, this analysis suggests that diet type may influence specific microbial taxa and functional groups, but larger sample sizes are needed to detect broader, statistically significant differences in gut microbiome composition. The presence of Crassvirales bacteriophages in omnivores and carbohydrate-metabolizing bacteria in vegetarians highlights the potential link between diet and microbial ecology. Future studies should explore these associations in larger cohorts to clarify how dietary patterns shape gut microbial diversity and function.
+
+# References
+Babraham Bioinformatics - FastQC A Quality Control tool for High Throughput Sequence Data. (n.d.). Retrieved March 1, 2026, from https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+
+Cao, Z., Sugimura, N., Burgermeister, E., Ebert, M. P., Zuo, T., & Lan, P. (2022). The gut virome: A new microbiome component in health and disease. EBioMedicine, 81, 104113. https://doi.org/10.1016/j.ebiom.2022.104113
+
+Ewels, P., Magnusson, M., Lundin, S., & Käller, M. (2016). MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics, 32(19), 3047–3048. https://doi.org/10.1093/bioinformatics/btw354
+
+Lin, H., & Peddada, S. Das. (2023). Multi-group Analysis of Compositions of Microbiomes with Covariate Adjustments and Repeated Measures. Research Square, rs.3.rs-2778207. https://doi.org/10.21203/rs.3.rs-2778207/v1
+
+Losasso, C., Eckert, E. M., Mastrorilli, E., Villiger, J., Mancin, M., Patuzzi, I., Di Cesare, A., Cibin, V., Barrucci, F., Pernthaler, J., Corno, G., & Ricci, A. (2018). Assessing the influence of vegan, vegetarian and omnivore oriented westernized dietary styles on human gut microbiota: A cross sectional study. Frontiers in Microbiology, 9(MAR), 317. https://doi.org/10.3389/fmicb.2018.00317
+
+Lu, J., Breitwieser, F. P., Thielen, P., & Salzberg, S. L. (2017). Bracken: Estimating species abundance in metagenomics data. PeerJ Computer Science, 2017(1), e104. https://doi.org/10.7717/peerj-cs.104
+
+McDonald, D., Clemente, J. C., Kuczynski, J., Rideout, J. R., Stombaugh, J., Wendel, D., Wilke, A., Huse, S., Hufnagle, J., Meyer, F., Knight, R., & Caporaso, J. G. (2012). The Biological Observation Matrix (BIOM) format or: how I learned to stop worrying and love the ome-ome. GigaScience 12 1:1, 1(1), 7-. https://doi.org/10.1186/2047-217X-1-7
+
+McMurdie, P. J., & Holmes, S. (2013). phyloseq: An R Package for Reproducible Interactive Analysis and Graphics of Microbiome Census Data. PLOS ONE, 8(4), e61217. https://doi.org/10.1371/journal.pone.0061217
+
+Saxena, R. K., Saran, S., Isar, J., & Kaushik, R. (2016). Production and Applications of Succinic Acid. Current Developments in Biotechnology and Bioengineering: Production, Isolation and Purification of Industrial Products, 601–630. https://doi.org/10.1016/B978-0-444-63662-1.00027-0
+
+Sidhu, S. R. K., Kok, C. W., Kunasegaran, T., & Ramadas, A. (2023). Effect of Plant-Based Diets on Gut Microbiota: A Systematic Review of Interventional Studies. Nutrients, 15(6), 1510. https://doi.org/10.3390/nu15061510
+
+The Sequence Read Archive (SRA). (n.d.). Retrieved March 1, 2026, from https://www.ncbi.nlm.nih.gov/sra/docs/
+
+Wood, D. E., Lu, J., & Langmead, B. (2019). Improved metagenomic analysis with Kraken 2. Genome Biology 2019 20:1, 20(1), 257-. https://doi.org/10.1186/s13059-019-1891-0
+
+Zhou, Q., Su, X., & Ning, K. (2014). Assessment of quality control approaches for metagenomic data analysis. Scientific Reports 2014 4:1, 4(1), 6957-. https://doi.org/10.1038/srep06957
+ 
+
