@@ -61,6 +61,19 @@ Quality assessment of raw sequencing reads was performed using FastQC and summar
 Reports can be seen at [QC reports](https://iroayotoki2.github.io/Metagenomics/)
 
 ## Relative Abundance 
-Relative abundance plots made at both the phylum and genus level reveal important information about the samples, at the phylum level all the samples consisted largely of 4 main phyla (acidobacteriota, acinomycetota, bacteroidota and bacillota) while at the genus level at least 75% of each sample consisted of a random distribution of about 20 samples while the other 25% was contained the other genera that were not observed in these plots
+Relative abundance plots made at both the phylum and genus level reveal important information about the samples, at the phylum level all the samples consisted largely of 4 main phyla (acidobacteriota, acinomycetota, bacteroidota and bacillota) while at the genus level at least 75% of each sample consisted of a random distribution of about 20 samples while the other 25% was contained the other genera that were not observed in these plots. There is no visible diet based distribution found from this analysis step this is possibly due to small sample size.
 
-![Phyla Plot](Plots/Top20Phyla)
+![Phyla Plot](Plots/Top20phyla.jpeg)
+
+Figure 1: Top 20 Phylum-Level Relative Abundance Across Samples
+Stacked bar plot illustrating the relative abundance of the top 20 phyla across all samples. Each bar corresponds to an individual sample grouped by diet (Omnivore vs. Vegan). The plot reveals overall taxonomic structure at a higher classification level, showing dominant phyla shared across samples as well as variation in their relative proportions between dietary groups
+![Genus Plot](Plots/Top20genus.jpeg)
+
+Figure 2: Top 20 Genus-Level Relative Abundance Across Samples
+Stacked bar plot showing the relative abundance of the top 20 most abundant genera across all samples, with remaining genera grouped as “Other.” Each bar represents an individual sample categorized by diet (Omnivore vs. Vegan). Differences in genus composition highlight variability both within and between dietary groups, with certain genera showing higher relative abundance in specific diets.
+
+## Alpha Diversity 
+Alpha diversity analysis revealed differences in richness and evenness between diet groups. Richness-based metrics, including Observed features, Chao1, ACE, and Fisher indices, were generally higher in omnivore samples compared to vegetarian samples, suggesting increased taxonomic richness in the omnivore group. However, substantial variability was observed among omnivore replicates, including one notably low-richness sample. In contrast, vegetarian samples displayed more consistent richness estimates. Shannon diversity values were comparable between the two groups, indicating that overall diversity, accounting for both richness and evenness, did not differ markedly. However, Simpson and inverse Simpson indices highlighted reduced evenness in at least one omnivore sample, consistent with dominance by a few taxa, whereas vegetarian samples exhibited more uniform community structure. Overall, these results suggest that while omnivore-associated communities may harbor greater richness, vegetarian-associated communities appear more even and less variable across samples.
+![Alpha diversity Plot](Plots/Alpha_Diversity.jpeg)
+
+Figure 3:  Alpha diversity across omnivore and vegetarian samples using multiple metrics (Observed, Chao1, ACE, Shannon, Simpson, inverse Simpson, Fisher). Omnivore samples generally show higher richness but greater variability, including a low-richness outlier, while vegetarian samples display more consistent diversity. Shannon values are similar between groups, whereas Simpson-based indices indicate more even community structure in vegetarian samples.
