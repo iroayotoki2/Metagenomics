@@ -61,3 +61,6 @@ Quality assessment of raw sequencing reads was performed using FastQC and summar
 Reports can be seen at [QC reports](https://iroayotoki2.github.io/Metagenomics/)
 
 ## Relative Abundance 
+Relative abundance plots made at both the phylum and genus level reveal important information about the samples, at the phylum level all the samples consisted largely of 4 main phyla (acidobacteriota, acinomycetota, bacteroidota and bacillota) while at the genus level at least 75% of each sample consisted of a random distribution of about 20 samples while the other 25% was contained the other genera that were not observed in these plots
+
+![Phyla Plot](Plots/Top20Phyla)
