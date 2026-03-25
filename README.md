@@ -117,15 +117,26 @@ Cao, Z., Sugimura, N., Burgermeister, E., Ebert, M. P., Zuo, T., & Lan, P. (2022
 
 Ewels, P., Magnusson, M., Lundin, S., & Käller, M. (2016). MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics, 32(19), 3047–3048. https://doi.org/10.1093/bioinformatics/btw354
 
+Hou, K., Wu, Z. X., Chen, X. Y., Wang, J. Q., Zhang, D., Xiao, C., Zhu, D., Koya, J. B., Wei, L., Li, J., & Chen, Z. S. (2022). Microbiota in health and diseases. Signal Transduction and Targeted Therapy 2022 7:1, 7(1), 135-. https://doi.org/10.1038/s41392-022-00974-4
+
+Kushwaha, U. K. S., Adhikari, N. R., Prasad, B., Maurya, S. K., Thangadurai, D., & Sangeetha, J. (2022). Genomics and its role in crop improvement. Bioinformatics in Agriculture: Next Generation Sequencing Era, 61–77. https://doi.org/10.1016/B978-0-323-89778-5.00024-6
+
+
 Lin, H., & Peddada, S. Das. (2023). Multi-group Analysis of Compositions of Microbiomes with Covariate Adjustments and Repeated Measures. Research Square, rs.3.rs-2778207. https://doi.org/10.21203/rs.3.rs-2778207/v1
 
+Liu, Y., Ghaffari, M. H., Ma, T., & Tu, Y. (2024). Impact of database choice and confidence score on the performance of taxonomic classification using Kraken2. ABIOTECH, 5(4), 465–475. https://doi.org/10.1007/s42994-024-00178-0
+
 Losasso, C., Eckert, E. M., Mastrorilli, E., Villiger, J., Mancin, M., Patuzzi, I., Di Cesare, A., Cibin, V., Barrucci, F., Pernthaler, J., Corno, G., & Ricci, A. (2018). Assessing the influence of vegan, vegetarian and omnivore oriented westernized dietary styles on human gut microbiota: A cross sectional study. Frontiers in Microbiology, 9(MAR), 317. https://doi.org/10.3389/fmicb.2018.00317
+
+Lu, J., Breitwieser, F. P., Thielen, P., & Salzberg, S. L. (2016). Bracken: Estimating species abundance in metagenomics data. https://doi.org/10.1101/051813
 
 Lu, J., Breitwieser, F. P., Thielen, P., & Salzberg, S. L. (2017). Bracken: Estimating species abundance in metagenomics data. PeerJ Computer Science, 2017(1), e104. https://doi.org/10.7717/peerj-cs.104
 
 McDonald, D., Clemente, J. C., Kuczynski, J., Rideout, J. R., Stombaugh, J., Wendel, D., Wilke, A., Huse, S., Hufnagle, J., Meyer, F., Knight, R., & Caporaso, J. G. (2012). The Biological Observation Matrix (BIOM) format or: how I learned to stop worrying and love the ome-ome. GigaScience 12 1:1, 1(1), 7-. https://doi.org/10.1186/2047-217X-1-7
 
 McMurdie, P. J., & Holmes, S. (2013). phyloseq: An R Package for Reproducible Interactive Analysis and Graphics of Microbiome Census Data. PLOS ONE, 8(4), e61217. https://doi.org/10.1371/journal.pone.0061217
+
+Meeks, B. K., Maki, K. A., Ames, N. J., & Barb, J. J. (2022). Comparing Published Gut Microbiome Taxonomic Data Across Multinational Studies. Nursing Research, 71(1), 43. https://doi.org/10.1097/NNR.0000000000000557
 
 Saxena, R. K., Saran, S., Isar, J., & Kaushik, R. (2016). Production and Applications of Succinic Acid. Current Developments in Biotechnology and Bioengineering: Production, Isolation and Purification of Industrial Products, 601–630. https://doi.org/10.1016/B978-0-444-63662-1.00027-0
 
@@ -136,5 +147,3 @@ The Sequence Read Archive (SRA). (n.d.). Retrieved March 1, 2026, from https://w
 Wood, D. E., Lu, J., & Langmead, B. (2019). Improved metagenomic analysis with Kraken 2. Genome Biology 2019 20:1, 20(1), 257-. https://doi.org/10.1186/s13059-019-1891-0
 
 Zhou, Q., Su, X., & Ning, K. (2014). Assessment of quality control approaches for metagenomic data analysis. Scientific Reports 2014 4:1, 4(1), 6957-. https://doi.org/10.1038/srep06957
- 
-
