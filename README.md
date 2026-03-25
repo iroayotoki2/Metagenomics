@@ -56,3 +56,8 @@ Alpha diversity plots were generated using the `plot_richness` function from the
 Singletons were removed prior to differential abundance analysis, and the data were subsetted to the top 1000 most abundant genera. Differential abundance was calculated using ANCOM-BC2 v2.10.1. The fixed formula and structural zero variable were set to the diet variable, while `lib_cut` was set to 1000 to remove samples with low sequencing depth. Other default parameters were retained to preserve the accuracy of the method (Lin & Peddada, 2023).
 
 # Results 
+## Quality Assessment
+Quality assessment of raw sequencing reads was performed using FastQC and summarized with MultiQC. Per-base sequence quality scores across all samples were consistently high, with the majority of bases exhibiting Phred quality scores above 30. Per-sequence quality score distributions were tightly clustered, with the majority of reads falling within high-confidence score ranges. Per-base N content was negligible across all samples. The proportion of ambiguous nucleotides (N) remained near zero across read positions, without position-specific spikes. There were little to no overrepresented sequences and adapted content detected by FastQC. Collectively, these quality metrics demonstrate that the sequencing data are of high technical quality and suitable for taxonomic profiling and other downstream  analysis without extensive quality trimming. 
+Reports can be seen at [QC reports](https://iroayotoki2.github.io/Metagenomics/)
+
+## Relative Abundance 
