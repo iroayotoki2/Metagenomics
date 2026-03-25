@@ -6,22 +6,38 @@
 </head>
 <body>
     <h1>QC Reports</h1>
-
-    <ul>
-        <li><a href="QC_reports/SRR8146935_1_fastqc.html">SRR8146935_1</a></li>
-        <li><a href="QC_reports/SRR8146936_1_fastqc.html">SRR8146936_1</a></li>
-        <li><a href="QC_reports/SRR8146937_1_fastqc.html">SRR8146937_1</a></li>
-        <li><a href="QC_reports/SRR8146938_1_fastqc.html">SRR8146938_1</a></li>
-        <li><a href="QC_reports/SRR8146939_1_fastqc.html">SRR8146939_1</a></li>
-        <li><a href="QC_reports/SRR8146940_1_fastqc.html">SRR8146940_1</a></li>
-        <li><a href="QC_reports/SRR8146935_2_fastqc.html">SRR8146935_2</a></li>
-        <li><a href="QC_reports/SRR8146936_2_fastqc.html">SRR8146936_2</a></li>
-        <li><a href="QC_reports/SRR8146937_2_fastqc.html">SRR8146937_2</a></li>
-        <li><a href="QC_reports/SRR8146938_2_fastqc.html">SRR8146938_2</a></li>
-        <li><a href="QC_reports/SRR8146939_2_fastqc.html">SRR8146939_2</a></li>
-        <li><a href="QC_reports/SRR8146940_2_fastqc.html">SRR8146940_2</a></li>
-        <li><a href="QC_reports/multiqc_report.html">MultiQC Summary Report</a></li>
+    <ul id="report-list">
+        <!-- Links will be inserted here -->
     </ul>
 
+    <script>
+        // List of files in QC_reports
+        const files = [
+            "SRR8146935_1_fastqc.html",
+            "SRR8146936_1_fastqc.html",
+            "SRR8146937_1_fastqc.html",
+            "SRR8146938_1_fastqc.html",
+            "SRR8146939_1_fastqc.html",
+            "SRR8146940_1_fastqc.html",
+            "SRR8146935_2_fastqc.html",
+            "SRR8146936_2_fastqc.html",
+            "SRR8146937_2_fastqc.html",
+            "SRR8146938_2_fastqc.html",
+            "SRR8146939_2_fastqc.html",
+            "SRR8146940_2_fastqc.html",
+            "multiqc_report.html"
+        ];
+
+        const ul = document.getElementById("report-list");
+
+        files.forEach(file => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = `QC_reports/${file}`;
+            a.textContent = file.replace("_fastqc.html", "").replace(".html", "").replace("_", " ");
+            li.appendChild(a);
+            ul.appendChild(li);
+        });
+    </script>
 </body>
 </html>
